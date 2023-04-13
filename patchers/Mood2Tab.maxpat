@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 0,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 956.0, 212.0, 1262.0, 948.0 ],
+		"rect" : [ 956.0, 212.0, 663.0, 677.0 ],
 		"openrect" : [ 0.0, 0.0, 165.0, 146.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -40,6 +40,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-5",
+					"index" : 0,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 129.0, 326.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
@@ -119,6 +131,20 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
 			"obj-3::obj-1" : [ "fade", "FADE", 0 ],
@@ -163,16 +189,30 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "MOOD2 channel icons-01 purple.svg",
+				"bootpath" : "~/Documents/Max 8/Max for Live Devices/MOOD MKII MIDI Control Project/media",
+				"patcherrelativepath" : "../../../Max 8/Max for Live Devices/MOOD MKII MIDI Control Project/media",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MOOD2 channel icons-02 salmon.svg",
+				"bootpath" : "~/Documents/Max 8/Max for Live Devices/MOOD MKII MIDI Control Project/media",
+				"patcherrelativepath" : "../../../Max 8/Max for Live Devices/MOOD MKII MIDI Control Project/media",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Mood2AltControls.maxpat",
-				"bootpath" : "~/Documents/GitHub/CBA-Control-Plugins/patchers",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 8/Max for Live Devices/MOOD MKII MIDI Control Project/patchers",
+				"patcherrelativepath" : "../../../Max 8/Max for Live Devices/MOOD MKII MIDI Control Project/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Mood2SynthMode.maxpat",
-				"bootpath" : "~/Documents/GitHub/CBA-Control-Plugins/patchers",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 8/Max for Live Devices/MOOD MKII MIDI Control Project/patchers",
+				"patcherrelativepath" : "../../../Max 8/Max for Live Devices/MOOD MKII MIDI Control Project/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
